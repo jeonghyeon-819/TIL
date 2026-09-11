@@ -11,12 +11,15 @@
 <br>
 
 ## 실수 입력
-- 실수 type를 입력받기 위해서는 실수 type인 double 변수를 선언한 뒤 sc.nextDouble() 을 이용해 입력을 받아야 한다.
+- 실수 type를 입력받기 위해서는 실수 type인 double 변수를 선언한 뒤 sc.nextDouble() 을 이용해 입력을 받아야 한다. <br>
 ✓ 헷갈린 부분 : 소수점을 출력하기 위해서는 System.out.printf("%.?f, ?); 를 사용해야 한다.
 
 <br>
 
 ## 공백을 사이에 두고 입력
+- 공백을 사이에 두고 두 개의 수를 입력받고 싶다면 Scanner 를 이용해 두 개의 정수형 변수에 입력을 받아주면 된다.
+- sc.nextInt() 는 공백 단위로 입력을 받아주기 때문에 공백을 무시한 채 두 개의 숫자만을 입력받을 수 있다.
+- 예 : int a = sc.nextInt(); int b = sc.nextInt(); -> 13 17 입력하면 된다.
 
 <br>
 
