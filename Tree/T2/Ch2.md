@@ -31,8 +31,49 @@
 <br>
 
 ## 문자, 문자열 입력
-- 
+- Java에서 문자 1개만 입력받을 수 없다. 항상 문자열 단위로 입력을 받아야 한다.
+- 문자열은 String으로 sc.next()로 입력받을 수 있다.
+    - 문자열 s의 첫 번째 문자는 s.charAt(0)으로 조회가 가능하기에, 이 과정을 거쳐 char 타입의 문자로 변환 가능
+    - sc.next().charAt(0); 은 한 줄로 표현이 가능하다.
+    - 예: String s = sc.next(); char c = s.charAt(0); System.out.println(c);
+    - 예: char c = sc.next().charAt(0); System.out.prtinln(c);
+- Java에서 문자열 1개 입력은 sc.next(); 를 사용하면 된다.
 
 <br>
 
 ## 특정 문자를 사이에 두고 입력
+- 두 수가 특정 문자를 사이에 두고 입력으로 들어오는 경우에는 전체를 하나의 문자열로 입력받고
+- s.split(특정문자) 함수를 이용해 문자열을 특정 문자를 기준으로 나눈 뒤
+- 각 값을 원소로 하는 배열을 받을 수 있다.
+- 예: String s = sc.next(); String[] strArr = s.split(":"); System.out.println(strArr[0] + "\n" + strArr[1]);
+- 문자열로 입력받고 숫자로 변환하는 방법
+    - String s = sc.next();
+    - String[] strArr = s.split(":");
+    - int h = Integer.parseInt(strArr[0]);
+    - System.out.print((h+1) + ":" + strArr[1]);
+        - strArr[0] 즉, 문자를 입력받고
+        - Integer.parseInt(strArr[0]) 을 통해 숫자로 변환
+        - Integer.parseInt(strArr[0]) + 1 을 하면 숫자+1 가 된다. <br>
+✓ 알게 된 부분 : strArr[0] + 1 을 하면 문자+1이 된다. <br>
+✓ 알게 된 부분 : 출력할 때 . 마침표를 넣고 싶을 경우에는 "\\.' 로 해야한다.
+
+<br>
+
+### 특정 문자를 사이에 두고 3개 이상의 값을 입력
+- "-" 문자를 사이에 두고 3개의 수를 입력받아 출력하는 코드 역시 s.split(특정문자) 를 이용하면 된다.
+- 예: 입력 50-60-70
+- 풀이 : String s = sc.next();
+- 풀이 : String[] strArr = s.split("-");
+- 풀이 : System.out.println(strArr[0] + "\n" + strArr[1] + "\n" + strArr[2]);
+<br>
+<br>
+- 문제 풀이 참고
+    - String year = scanner.next();
+    - String[] days = year.split("-");
+    - System.out.printf("%s.%s.%s", days[2], days[0], days[1]);
+
+    - String[] s = scanner.next().split("-");
+    - String mm = s[0];
+    - String dd = s[1];
+    - String yyyy = s[2];
+    - System.out.println(yyyy + "." + mm + "." + dd);
