@@ -11,7 +11,8 @@
 <br>
 
 ## 📂 구조
-- Tree : 코드 트리 알고리즘 문제 풀이
+- Tree : 코드트리 알고리즘 문제 풀이
+    - CodeTree_Solutions : 2026.09.18 이후부터 코드트리 문제 연동
 - Java_Study : Java 강의 학습 및 개념 정리
 
 <br>
