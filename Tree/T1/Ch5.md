@@ -125,6 +125,13 @@
 
 <br>
 
+### Side Note
+- for (int i = a; i <= b; i++) { cnt = 0; if (i % 2 == 0) { cnt++; } } System.out.println(cnt);
+- 이런 식으로 쓰면 cnt 값이 for loop가 진행될 때마다 0으로 새로 초기화된다.
+
+
+<br>
+
 ## sum 계산하기
 
 <br>
